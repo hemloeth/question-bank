@@ -1,0 +1,103 @@
+/* Csefirstsem.css */
+
+/* Container for the subject list */
+.subject-container {
+    margin: 20px;
+    display: flex;
+    flex-direction: row; /* Stack subjects horizontally by default */
+    align-items: flex-start; /* Align items at the start */
+    gap: 40px; /* Space between subject containers */
+}
+
+/* Individual subject container */
+.subject {
+    display: flex;
+    flex-direction: column; /* Stack title and years vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+/* Subject title styling */
+.subject-title {
+    font-size: 24px;
+    color: #333;
+    
+}
+
+/* Unordered list styling */
+.year-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    display: flex; /* Use flexbox for the year items */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    justify-content: center; /* Center the years */
+    gap: 15px; /* Gap between year buttons */
+    margin-bottom: -50px;
+}
+
+/* List item styling */
+.year-item {
+    margin: 5px 0; /* Space between list items */
+}
+
+/* Link styling */
+.download-link {
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* Link text color */
+    background-color: #007bff; /* Background color for the link */
+    border: 1px solid #007bff; /* Border around links */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding inside the link */
+    transition: background-color 0.3s, transform 0.1s; /* Transition for effects */
+    display: inline-block; /* Make the link behave like a block element */
+    width: 100px; /* Fixed width for equal size */
+    text-align: center; /* Center text inside the link */
+}
+
+/* Link hover and active effects */
+.download-link:hover {
+    background-color: #0056b3; /* Darker background on hover */
+}
+
+.download-link:active {
+    transform: scale(0.95); /* Scale down when clicked */
+    background-color: #004085; /* Even darker background when clicked */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .subject-container {
+        flex-direction: column; /* Stack subjects vertically */
+        align-items: center; /* Center subjects */
+    }
+    
+    .subject {
+        align-items: center; /* Center title and years */
+        margin-bottom: 30px; /* Space between different subjects */
+    }
+
+    .subject-title {
+        font-size: 20px; /* Slightly smaller font size for titles */
+        margin-bottom: 10px; /* Space below the title */
+    }
+
+    .year-list {
+        justify-content: center; /* Center the years */
+    }
+
+    .download-link {
+        width: 80px; /* Adjust width for smaller screens */
+        padding: 8px 12px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .subject-title {
+        font-size: 18px; /* Further decrease font size for very small screens */
+        
+    }
+    
+    .download-link {
+        width: 70px; /* Further adjust width for very small screens */
+        padding: 6px 10px; /* Further adjust padding for very small screens */
+    }
+}

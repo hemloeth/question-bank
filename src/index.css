@@ -1,0 +1,78 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Apply Commissioner as the default font */
+body {
+  font-family: 'Commissioner', sans-serif;
+  background-color: rgb(254,254,255);
+}
+
+/* Utility classes for different fonts */
+.font-josefin {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Example of using different weights */
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-extra-bold {
+  font-weight: 900;
+}
+
+/* Responsive font sizes */
+.text-small {
+  font-size: 0.875rem; /* 14px */
+}
+
+.text-medium {
+  font-size: 1rem; /* 16px */
+}
+
+.text-large {
+  font-size: 1.25rem; /* 20px */
+}
+
+.text-xlarge {
+  font-size: 1.5rem; /* 24px */
+}
+
+/* Additional utility classes for other font properties */
+.font-italic {
+  font-style: italic;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+/* Example of combining multiple utility classes */
+.header {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem; /* 24px */
+  text-transform: uppercase;
+}
+
+/* Rest of your global styles... */
